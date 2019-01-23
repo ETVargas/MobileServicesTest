@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.mas.ethan.mobileservicestest.MainActivity">
     <item
+        android:id="@+id/action_nydrel"
+        android:title="@string/action_nydrel" />
+    <item
+        android:id="@+id/action_ethan"
+        android:title="@string/action_ethan" />
+    <item
         android:id="@+id/action_settings"
         android:orderInCategory="100"
         android:title="@string/action_settings"
