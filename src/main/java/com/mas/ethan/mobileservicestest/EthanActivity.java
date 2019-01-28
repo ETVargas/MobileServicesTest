@@ -18,4 +18,9 @@ public class EthanActivity extends AppCompatActivity {
         Intent intentCapture = new Intent(EthanActivity.this, WeatherActivity.class);
         startActivity(intentCapture);
     }
+
+    public void moveToLocationScreen(View v) {
+        Intent intentCapture = new Intent(EthanActivity.this, LocationActivity.class);
+        startActivity(intentCapture);
+    }
 }

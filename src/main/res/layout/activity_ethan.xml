@@ -29,4 +29,14 @@
         android:text="Weather"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/buttonLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:onClick="moveToLocationScreen"
+        android:text="Location"
+        app:layout_constraintBottom_toTopOf="@+id/buttonWeather"
+        app:layout_constraintStart_toStartOf="@+id/buttonWeather" />
 </android.support.constraint.ConstraintLayout>
