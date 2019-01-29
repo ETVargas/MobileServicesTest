@@ -29,6 +29,9 @@
         <activity android:name=".LocationActivity"></activity>
         <activity android:name=".WeatherActivity" />
         <activity android:name=".CompassActivity"></activity>
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".ArtistActivity" />
+        <activity android:name=".ArtistListActivity"></activity>
     </application>
 
 </manifest>
