@@ -24,7 +24,8 @@
         </activity>
         <activity android:name=".NydrelActivity" />
         <activity android:name=".EthanActivity" />
-        <activity android:name=".WeatherActivity"></activity>
+        <activity android:name=".WeatherActivity" />
+        <activity android:name=".CompassActivity"></activity>
     </application>
 
 </manifest>
