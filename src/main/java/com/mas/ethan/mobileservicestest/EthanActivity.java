@@ -33,4 +33,9 @@ public class EthanActivity extends AppCompatActivity {
         Intent intentCapture = new Intent(EthanActivity.this, ArtistListActivity.class);
         startActivity(intentCapture);
     }
+
+    public void moveToRestTestScreen(View v) {
+        Intent intentCapture = new Intent(EthanActivity.this, RestTestActivity.class);
+        startActivity(intentCapture);
+    }
 }

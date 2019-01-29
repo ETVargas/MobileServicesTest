@@ -4,7 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name = "android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -26,12 +26,13 @@
         <activity android:name=".NydrelActivity" />
         <activity android:name=".EthanActivity" />
         <activity android:name=".WeatherActivity" />
-        <activity android:name=".LocationActivity"></activity>
+        <activity android:name=".LocationActivity" />
         <activity android:name=".WeatherActivity" />
-        <activity android:name=".CompassActivity"></activity>
+        <activity android:name=".CompassActivity" />
         <activity android:name=".WeatherActivity" />
         <activity android:name=".ArtistActivity" />
-        <activity android:name=".ArtistListActivity"></activity>
+        <activity android:name=".ArtistListActivity" />
+        <activity android:name=".RestTestActivity"></activity>
     </application>
 
 </manifest>
