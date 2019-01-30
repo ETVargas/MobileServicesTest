@@ -32,7 +32,8 @@
         <activity android:name=".WeatherActivity" />
         <activity android:name=".ArtistActivity" />
         <activity android:name=".ArtistListActivity" />
-        <activity android:name=".RestTestActivity"></activity>
+        <activity android:name=".RestTestActivity" />
+        <activity android:name=".RestTest2Activity"></activity>
     </application>
 
 </manifest>

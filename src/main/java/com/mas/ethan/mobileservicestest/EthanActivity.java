@@ -38,4 +38,9 @@ public class EthanActivity extends AppCompatActivity {
         Intent intentCapture = new Intent(EthanActivity.this, RestTestActivity.class);
         startActivity(intentCapture);
     }
+
+    public void moveToRestTest2Screen(View v) {
+        Intent intentCapture = new Intent(EthanActivity.this, RestTest2Activity.class);
+        startActivity(intentCapture);
+    }
 }

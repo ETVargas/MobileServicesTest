@@ -67,7 +67,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:onClick="moveToRestTestScreen"
-        android:text="REST"
+        android:text="GET"
         app:layout_constraintStart_toStartOf="@+id/buttonArtistList"
         app:layout_constraintTop_toBottomOf="@+id/buttonArtistList" />
+
+    <Button
+        android:id="@+id/buttonRestTest2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="28dp"
+        android:onClick="moveToRestTest2Screen"
+        android:text="PUT"
+        app:layout_constraintEnd_toStartOf="@+id/buttonRestTest"
+        app:layout_constraintTop_toTopOf="@+id/buttonRestTest" />
 </android.support.constraint.ConstraintLayout>
