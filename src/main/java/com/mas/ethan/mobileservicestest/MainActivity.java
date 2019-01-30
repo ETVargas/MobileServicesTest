@@ -44,9 +44,7 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        } else if (id == R.id.action_nydrel) {
+        if (id == R.id.action_nydrel) {
             Intent intentNydrel= new Intent(MainActivity.this, NydrelActivity.class);
             startActivity(intentNydrel);
             return true;
@@ -57,5 +55,15 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+
+    public void moveToNydrelScreen(View v) {
+        Intent intentCapture = new Intent(MainActivity.this, NydrelActivity.class);
+        startActivity(intentCapture);
+    }
+    public void moveToEthanScreen(View v) {
+        Intent intentCapture = new Intent(MainActivity.this, EthanActivity.class);
+        startActivity(intentCapture);
     }
 }
