@@ -112,6 +112,11 @@ public class EthanActivity extends AppCompatActivity {
         startActivity(intentCapture);
     }
 
+    public void moveToTutorialScreen(View v) {
+        Intent intentCapture = new Intent(EthanActivity.this, TutorialActivity.class);
+        startActivity(intentCapture);
+    }
+
 
 
 

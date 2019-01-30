@@ -9,6 +9,7 @@
     android:orientation="vertical"
     tools:context="com.mas.ethan.mobileservicestest.EthanActivity">
 
+
     <TextView
         android:id="@+id/EthanTitle"
         android:layout_width="wrap_content"
@@ -80,7 +81,7 @@
     <ScrollView
         android:id="@+id/myScrollView"
         android:layout_width="match_parent"
-        android:layout_height="310dp">
+        android:layout_height="164dp">
 
         <TextView
             android:id="@+id/myTextView"
@@ -93,7 +94,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="horizontal">
 
         <Button
@@ -112,5 +113,12 @@
             android:onClick="loadMessage"
             android:text="Load Message" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonTutorial"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="moveToTutorialScreen"
+        android:text="Tutorial" />
 
 </LinearLayout>
