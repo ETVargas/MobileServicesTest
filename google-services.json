@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "227328938365",
+    "firebase_url": "https://mas1-ce7bb.firebaseio.com",
+    "project_id": "mas1-ce7bb",
+    "storage_bucket": "mas1-ce7bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:227328938365:android:9b06bcbda8e50429",
+        "android_client_info": {
+          "package_name": "com.mas.ethan.mobileservicestest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "227328938365-d2aavat1ods87bc312l5j21d62rqslrh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyApOg6SBRpoqlAKWaBlv9kYz2Q9-6OCijo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
