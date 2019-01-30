@@ -36,6 +36,8 @@ public class ArtistListActivity extends AppCompatActivity {
     Button buttonAddArtist;
     ListView listViewArtists;
 
+    String tempArtist = "";
+
     //a list to store all the artist from firebase database
     List<Artist> artists;
 
@@ -187,10 +189,13 @@ public class ArtistListActivity extends AppCompatActivity {
         final Spinner spinnerGenre = (Spinner) dialogView.findViewById(R.id.spinnerGenres);
         final Button buttonUpdate = (Button) dialogView.findViewById(R.id.buttonUpdateArtist);
         final Button buttonDelete = (Button) dialogView.findViewById(R.id.buttonDeleteArtist);
+        final Button buttonWrite = (Button) dialogView.findViewById(R.id.buttonWrite);
 
         dialogBuilder.setTitle(artistName);
         final AlertDialog b = dialogBuilder.create();
         b.show();
+
+        tempArtist = artistName;
 
 
         buttonUpdate.setOnClickListener(new View.OnClickListener() {
@@ -218,6 +223,15 @@ public class ArtistListActivity extends AppCompatActivity {
                         b.dismiss();
                     }
                 });
+            }
+        });
+
+
+        buttonWrite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                EthanActivity.artistStr =  "I really like the artist " + tempArtist + "!";
+                Toast.makeText(getApplicationContext(), "Captured!", Toast.LENGTH_LONG).show();
             }
         });
     }

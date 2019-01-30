@@ -1,15 +1,18 @@
 package com.mas.ethan.mobileservicestest;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.RotateAnimation;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class CompassActivity extends Activity implements SensorEventListener {
 
@@ -87,5 +90,11 @@ public class CompassActivity extends Activity implements SensorEventListener {
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         // not in use
+    }
+
+
+    public void writeCompass(View v) {
+        EthanActivity.compassStr =  "I am currently facing " + (-1*(int)currentDegree) + " degrees CCW from North!";
+        Toast.makeText(getApplicationContext(), "Captured!", Toast.LENGTH_LONG).show();
     }
 }

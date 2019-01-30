@@ -21,4 +21,15 @@
         android:layout_centerHorizontal="true"
         android:src="@drawable/img_compass" />
 
+    <Button
+        android:id="@+id/buttonWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginEnd="13dp"
+        android:onClick="writeCompass"
+        android:text="CAPTURE" />
+
 </RelativeLayout>

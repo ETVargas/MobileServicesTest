@@ -65,4 +65,24 @@ public class LocationActivity extends Activity {
             }
         });
     }
+
+    public void writeLocation(View v) {
+        gps = new GPSTracker(LocationActivity.this);
+
+        // check if GPS enabled
+        if(gps.canGetLocation()){
+
+            double latitude = gps.getLatitude();
+            double longitude = gps.getLongitude();
+
+            // \n is for new line
+            EthanActivity.locationStr =  "My coordinates are - Lat:" + latitude + " Long:" + longitude + "!";
+            Toast.makeText(getApplicationContext(), "Captured!", Toast.LENGTH_LONG).show();
+        }else{
+            // can't get location
+            // GPS or Network is not enabled
+            // Ask user to enable GPS/network in settings
+            gps.showSettingsAlert();
+        }
+    }
 }

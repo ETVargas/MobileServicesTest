@@ -1,83 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginLeft="14dp"
+    android:layout_marginRight="14dp"
+    android:orientation="vertical"
     tools:context="com.mas.ethan.mobileservicestest.EthanActivity">
 
     <TextView
         android:id="@+id/EthanTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         android:text="Ethan's Feature Test"
-        android:textSize="30sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:textSize="30sp" />
 
-    <Button
-        android:id="@+id/buttonWeather"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:layout_marginEnd="28dp"
-        android:onClick="moveToWeatherScreen"
-        android:text="Weather"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/buttonLocation"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:onClick="moveToLocationScreen"
-        android:text="Location"
-        app:layout_constraintBottom_toTopOf="@+id/buttonWeather"
-        app:layout_constraintStart_toStartOf="@+id/buttonWeather" />
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/buttonCompass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:onClick="moveToCompassScreen"
-        android:text="Compass"
-        app:layout_constraintEnd_toStartOf="@+id/buttonWeather"
-        app:layout_constraintTop_toTopOf="@+id/buttonWeather" />
+        <Button
+            android:id="@+id/buttonWeather"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="moveToWeatherScreen"
+            android:text="Weather" />
 
-    <Button
-        android:id="@+id/buttonArtistList"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:layout_marginTop="96dp"
-        android:onClick="moveToArtistListScreen"
-        android:text="Artists"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <Button
+            android:id="@+id/buttonLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="moveToLocationScreen"
+            android:text="Location" />
 
-    <Button
-        android:id="@+id/buttonRestTest"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:onClick="moveToRestTestScreen"
-        android:text="GET"
-        app:layout_constraintStart_toStartOf="@+id/buttonArtistList"
-        app:layout_constraintTop_toBottomOf="@+id/buttonArtistList" />
+        <Button
+            android:id="@+id/buttonCompass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="moveToCompassScreen"
+            android:text="Compass" />
+    </LinearLayout>
 
-    <Button
-        android:id="@+id/buttonRestTest2"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="28dp"
-        android:onClick="moveToRestTest2Screen"
-        android:text="PUT"
-        app:layout_constraintEnd_toStartOf="@+id/buttonRestTest"
-        app:layout_constraintTop_toTopOf="@+id/buttonRestTest" />
-</android.support.constraint.ConstraintLayout>
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonArtistList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="moveToArtistListScreen"
+            android:text="Artists" />
+
+        <Button
+            android:id="@+id/buttonRestTest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="moveToRestTestScreen"
+            android:text="GET" />
+
+        <Button
+            android:id="@+id/buttonRestTest2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="moveToRestTest2Screen"
+            android:text="PUT" />
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/myScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="310dp">
+
+        <TextView
+            android:id="@+id/myTextView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/starting_message"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonSaveMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="saveMessage"
+            android:text="Save Message" />
+
+        <Button
+            android:id="@+id/buttonLoadMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:onClick="loadMessage"
+            android:text="Load Message" />
+    </LinearLayout>
+
+</LinearLayout>

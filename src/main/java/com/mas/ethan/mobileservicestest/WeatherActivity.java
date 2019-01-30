@@ -100,6 +100,12 @@ public class WeatherActivity extends AppCompatActivity {
     }
 
 
+    public void writeWeather(View v) {
+        EthanActivity.weatherStr =  "It is currently " + currentTemperatureField.getText() + " degrees in " + cityField.getText() + "!";
+        Toast.makeText(getApplicationContext(), "Captured!", Toast.LENGTH_LONG).show();
+    }
+
+
 
     class DownloadWeather extends AsyncTask < String, Void, String > {
         @Override
