@@ -13,6 +13,7 @@ public class EthanActivity extends AppCompatActivity {
         setContentView(R.layout.activity_ethan);
     }
 
+    // Screen transitions
 
     public void moveToWeatherScreen(View v) {
         Intent intentCapture = new Intent(EthanActivity.this, WeatherActivity.class);
